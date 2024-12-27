@@ -28,56 +28,33 @@ Publish the website in the LocalHost.
 ```
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribbble Clone</title>
+    <title>Dribble Clone</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .hero-section {
-            background-color: turquoise;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .hero-section h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .hero-section p {
-            font-size: 1.2rem;
-            color: #555;
-        }
-        .card img {
-            object-fit: cover;
-        }
-        footer {
-            background-color: turquoise;
-            color:black;
-            text-align: center;
-            padding: 20px 0;
-        }
-    </style>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
         <div class="container">
-            <a class="navbar-brand" href="#">Dribbble Clone</a>
+            <a class="navbar-brand" href="#">Dribble</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Gallery</a>
+                        <a class="nav-link" href="#portfolio">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -85,81 +62,82 @@ Publish the website in the LocalHost.
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section">
+    <section class="bg-light text-dark text-center py-5">
         <div class="container">
-            <h1>Discover the Best Designs</h1>
-            <p>Your source for design inspiration and creativity</p>
+            <h1>Dribble</h1>
+            <p class="lead">Showcase and discover exceptional design projects.</p>
+            <a href="#About Us" class="btn btn-primary btn-lg">View Portfolio</a>
         </div>
-    </div>
+    </section>
 
-    <!-- Features Section -->
-    <section id="features" class="py-5">
-        <div class="container">
-            <div class="row text-center">
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row">
                 <div class="col-md-4">
-                    <h3>World is waiting</h3>
-                    <p>Explore amazing projects from talented designers.</p>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Design Showcase</h5>
+                            <p class="card-text">Feature your best designs for the world to see.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Explore</h3>
-                    <p>Join a vibrant community of creatives.</p>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Collaboration</h5>
+                            <p class="card-text">Work with other designers and grow together.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <h3>Inspiration</h3>
-                    <p>Find ideas to fuel your next project.</p>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Inspiration</h5>
+                            <p class="card-text">Explore designs from a global community.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-5 bg-light">
-        <div class="container">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Portfolio</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="vietnam1.jpg" class="card-img-top" alt="Design 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Design 1</h5>
-                            <p class="card-text">Leave only footprints,carry only the memories</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 mb-4">
+                    <img src="vietnam1.jpg" class="img-fluid rounded shadow-sm" alt="Portfolio Item">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="picture1.jpg" class="card-img-top" alt="Design 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Design 2</h5>
-                            <p class="card-text">A wonderful piece of creativity.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 mb-4">
+                    <img src="picture1.jpg" class="img-fluid rounded shadow-sm" alt="Portfolio Item">
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="image-350x200 (6).jpg" class="painting" alt="Design 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Design 3</h5>
-                            <p class="card-text">A beautiful example of art.</p>
-                        </div>
-                    </div>
+                <div class="col-md-4 mb-4">
+                    <img src="image-350x200 (6).jpg" class="img-fluid rounded shadow-sm" alt="Portfolio Item">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
-        <p>@2024 Designed by Manasa devi A.T</p>
+    <footer class="bg-light text-dark text-center py-3">
+        <div class="container">
+            <p><h3>Designed and Developed by Manasa devi AT</h3></p>
+        </div>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
+    <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
 
 ```
 ## OUTPUT:
-![Screenshot (85)](https://github.com/user-attachments/assets/cccffc72-c5ae-4bc1-84bd-d4e1a5408fd2)
+![Screenshot (89)](https://github.com/user-attachments/assets/0a6db280-0d7b-4adb-a8e7-b7b445b9b864)
 
 
 ## RESULT:
